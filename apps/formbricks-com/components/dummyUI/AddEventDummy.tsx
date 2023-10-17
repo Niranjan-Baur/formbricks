@@ -37,14 +37,14 @@ const DummyUI: React.FC = () => {
             <Select
               value={triggerEventClassId}
               onValueChange={(eventClassId) => setTriggerEvent(idx, eventClassId)}>
-              <SelectTrigger className="xs:w-[180px] xs:text-base w-full p-1.5 text-xs text-slate-800 dark:border-slate-400 dark:bg-slate-700 dark:text-slate-300">
+              <SelectTrigger className="xs:w-[190px] xs:text-base w-full p-1.5 text-xs text-slate-800 dark:border-slate-400 dark:bg-slate-700 dark:text-slate-300">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
                 {eventClasses.map((eventClass) => (
                   <SelectItem
                     key={eventClass.id}
-                    className="xs:text-base px-0.5 py-1 text-xs text-slate-800 dark:bg-slate-700 dark:text-slate-300 dark:ring-slate-700"
+                    className="xs:text-base px-2 py-1 text-xs text-slate-800 dark:bg-slate-700 dark:text-slate-300 dark:ring-slate-700"
                     value={eventClass.id}>
                     {eventClass.name}
                   </SelectItem>

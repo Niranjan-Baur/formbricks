@@ -41,7 +41,7 @@ const SelectContent: React.ComponentType<SelectPrimitive.SelectContentProps> = R
         className
       )}
       {...props}>
-      <SelectPrimitive.Viewport className="p-1">{children}</SelectPrimitive.Viewport>
+      <SelectPrimitive.Viewport className="">{children}</SelectPrimitive.Viewport>
     </SelectPrimitive.Content>
   </SelectPrimitive.Portal>
 ));
